@@ -31,26 +31,26 @@ let tocóFondoFinal = false;
 
 // Imágenes
 const imagenesPeces = [
-    'img/fish/Caballito.png',
-    'img/fish/camaron.png',
-    'img/fish/cangrejo.png',
-    'img/fish/pez_cirujano.png',
-    'img/fish/pez_globo.png',
-    'img/fish/pez_loro.png',
-    'img/fish/pez_payaso.png',
-    'img/fish/tortuga_marina.png',
-    'img/fish/trucha.png'
+    'img/fish/Caballito.webp',
+    'img/fish/camaron.webp',
+    'img/fish/cangrejo.webp',
+    'img/fish/pez_cirujano.webp',
+    'img/fish/pez_globo.webp',
+    'img/fish/pez_loro.webp',
+    'img/fish/pez_payaso.webp',
+    'img/fish/tortuga_marina.webp',
+    'img/fish/trucha.webp'
 ];
 
 const imagenesBasura = [
-    'img/trash/bomba.png',
-    'img/trash/tanque.png',
-    'img/trash/botella1.png',
-    'img/trash/botella2.png',
-    'img/trash/bolsa.png',
-    'img/trash/lata1.png',
-    'img/trash/lata2.png',
-    'img/trash/sixpack.png'
+    'img/trash/bomba.webp',
+    'img/trash/tanque.webp',
+    'img/trash/botella1.webp',
+    'img/trash/botella2.webp',
+    'img/trash/bolsa.webp',
+    'img/trash/lata1.webp',
+    'img/trash/lata2.webp',
+    'img/trash/sixpack.webp'
 ];
 
 // ======= CONTROLES =======
