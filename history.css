@@ -103,9 +103,9 @@ body {
 }
 
 .imagen-opcion {
-    width: 1500px  !important;
-    min-width: 1500px  !important;
-    max-width: 1500px  !important;
+    width: 1200px  !important;
+    min-width: 1200px  !important;
+    max-width: 1200px  !important;
     height: auto;
     flex-shrink: 0;
     flex-grow: 0;
