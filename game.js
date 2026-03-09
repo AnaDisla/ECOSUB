@@ -288,10 +288,10 @@ function mostrarPantallaGanar() {
     }, 10);
 
     const estadisticas = `
-        Puntaje: ${puntaje}<br>
-        Plastico eliminado: ${plasticRetirado} kg<br>
-        Peces protegidos: ${pecesProtegidos}<br>
-        Arecifes limpiados: ${metrosOceanoLimpio} m²
+        <div>Puntaje: ${puntaje}</div>
+        <div>Plastico eliminado: ${plasticRetirado} kg</div>
+        <div>Peces protegidos: ${pecesProtegidos}</div>
+        <div>Arecifes limpiados: ${metrosOceanoLimpio} m²</div>
     `;
     document.getElementById('estadisticasAmbientales').innerHTML = estadisticas;
 }
