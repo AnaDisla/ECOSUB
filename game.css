@@ -210,7 +210,7 @@ img#finBtn:hover {
     flex-direction: column;
     z-index: 40;
     opacity: 0;
-    transition: opacity 1s ease-in;
+    transition: opacity 0.5s ease-in;
 }
 
 .pantallaPausa.mostrar {

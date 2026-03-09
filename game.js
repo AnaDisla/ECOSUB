@@ -386,6 +386,14 @@ function reanudarJuego(){
     generadorObjetos = setInterval(generarObjeto, 1500);
   }, 500);
 }
+
+// ======= PAUSA AL SALIR DE LA VENTANA =======
+window.addEventListener('blur', function() {
+  if (jugando && !enMovimientoFinal) {
+    pausarJuego();
+  }
+});
+
 // ======= INICIALIZACIÓN =======
 function inicializar() {
     const dims = obtenerDimensionesJuego();
