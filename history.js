@@ -20,12 +20,12 @@ const listaCinematicas = [
 // Datos de las preguntas interactivas
 const preguntasInteractivas = {
     3: {
-        fondo: 'img/history/pregunta1/3.png',
-        opciones: ['img/history/pregunta1/opcion1.png', 'img/history/pregunta1/opcion2.png', 'img/history/pregunta1/opcion3.png']
+        fondo: 'img/history/pregunta1/3.webp',
+        opciones: ['img/history/pregunta1/opcion1.webp', 'img/history/pregunta1/opcion2.webp', 'img/history/pregunta1/opcion3.webp']
     },
     5: {
-        fondo: 'img/history/pregunta2/5.png',
-        opciones: ['img/history/pregunta2/opción1.png', 'img/history/pregunta2/opcion2.png', 'img/history/pregunta2/opcion3.png']
+        fondo: 'img/history/pregunta2/5.webp',
+        opciones: ['img/history/pregunta2/opción1.webp', 'img/history/pregunta2/opcion2.webp', 'img/history/pregunta2/opcion3.webp']
     }
 };
 
