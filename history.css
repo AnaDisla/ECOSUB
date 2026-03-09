@@ -140,3 +140,18 @@ body {
 .visible {
     display: block !important;
 }
+
+/* RESPONSIVE - PANTALLAS MÁS PEQUEÑAS */
+
+@media (max-width: 1000px) {
+    .imagen-opcion {
+        width: 900px !important;
+        min-width: 900px !important;
+        max-width: 900px !important;
+    }
+
+    .contenedor-opciones {
+        gap: 18px;
+        bottom: 150px;
+    }
+}
