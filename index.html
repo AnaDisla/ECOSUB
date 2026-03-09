@@ -1,40 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/x-icon" href="img/fish/cangrejo.png">
-  <title>EcoSub - Recolecta y salva el mar !!</title>
-  <link rel="stylesheet" href="index.css">
-  
-  <!-- Precargar videos críticos -->
-  <link rel="preload" as="video" href="img/intro (1).mp4" type="video/mp4">
-  <link rel="preload" as="video" href="img/loop.mp4" type="video/mp4">
-  
-  <!-- Prefetch de recursos secundarios -->
-  <link rel="prefetch" as="video" href="img/creditos.mp4">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoSub | Clean the Ocean</title>
+    <link rel="icon" type="image/x-icon" href="img/fish/cangrejo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <!-- Introooo -->
-    <video id="videoIntro" src="img/intro (2).mp4" autoplay muted playsinline></video>
 
-    <!-- pantalla de inicio -->
-    <div class="inicio" style="display:none;">
-      <video id="portada_bucle" src="img/loop.mp4" preload="auto" autoplay muted playsinline loop></video>
-      <!--<img id="imagenFondo" src="img/start.png" alt="background" /-->>
-      <div class="botones">
-        <img class="btn" src="img/jugar.png" onclick="start();" alt="Jugar" loading="eager">
-        <img class="btn" id="btnhistory" src="img/historia.png" onclick="history()" alt="Misión" loading="eager">
-        <img class="btn" src="img/creditos.png" onclick="creditos();" alt="Créditos" loading="eager">
-      </div>
+    <header class="hero">
+        <div class="submarine"><img src="img/sub.png" height="150px" alt=""></div> 
+        <img src="img/name.png" height="150px" alt="">
+        <p>Clean the ocean. Rescue marine life. Reach the hidden cave.</p>
+        <a href="ecosub.html" class="btn-play">Play the Game</a>
+        <img src="img/wut.png" width="100%" margin-top="50px" alt="">
+    </header>
 
-    </div>
 
-    <div class="creditos" style="display: none;">
-      <video id="videoCreditos" src="img/creditos.mp4" preload="auto" playsinline></video>
-      <img class="btn" src="img/menu.png" onclick="volverMenu();" alt="Volver al Menú" style="position:absolute; bottom:20px; right:20px; height:80px;" loading="eager">
-    </div>
+    <section class="about">
+        <h2>La Misión</h2>
+        <p>EcoSub es un juego 2D de desplazamiento lateral donde navegas en un submarino a través de un océano contaminado. Tu objetivo es llegar a una cueva submarina mientras gestiones 3 vidas. Evita a los peces, recolecta químicos peligrosos para limpiar los ecosistemas, y alcanza la cueva para ganar o pierde todas tus vidas para Game Over.</p>
 
-    <script src="index.js"></script>
+        <div class="gameplay-grid">
+            <div class="card">
+                <span class="card-icon">🐠</span>
+                <h3>Evita Los Peces</h3>
+                <p>Los peces pueden dañar tu submarino. Colisionar con uno te cuesta una vida. ¡Ten cuidado!</p>
+            </div>
+            <div class="card">
+                <span class="card-icon">⚗️</span>
+                <h3>Recolecta Químicos</h3>
+                <p>Recoge tanques químicos y residuos peligrosos. Cada objeto que recolectas sale del ecosistema y respeta el océano.</p>
+            </div>
+            <div class="card">
+                <span class="card-icon">🏴</span>
+                <h3>Alcanza La Cueva</h3>
+                <p>Tu meta final es llegar a la cueva submarina. Los ecosistemas limpios y vidas restantes determinan tu éxito.</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="impact">
+            <h2>Dinámica Del Juego</h2>
+            <p style="text-align: center; margin-bottom: 30px; max-width: 700px; margin-left: auto; margin-right: auto;">El océano se desplaza continuamente hacia adelante. Mientras que tú controlas el movimiento vertical del submarino, el entorno se mueve horizontalmente, creando la sensación de viajar hacia tu objetivo. Los objetos se generan dinámicamente y desaparecen cuando salen de la pantalla o colisionas con ellos.</p>
+            <div class="impact-stats">
+                <div class="stat-item">
+                    <span class="stat-number">GANAR</span>
+                    <p>Alcanza la cueva submarina con al menos 1 vida</p>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">PERDER</span>
+                    <p>Pierde las 3 vidas antes de llegar a la cueva</p>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">IMPACTO</span>
+                    <p>Observa tus estadísticas ambientales al final</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about">
+        <h2>El Equipo</h2>
+        <div class="team-container">
+            <div class="team-photo">
+                <div class="team-photo-placeholder">
+                    <img src="img/the crew.jpeg" alt="">
+                </div>
+                
+            </div>
+            <div class="team-grid">
+                <div class="member">
+                    <h3>Programador</h3>
+                    <div class="member-role">» Arquitecto de Código »</div>
+                    <p>Construyó la mecánica del juego, el motor y todos los sistemas. Maneja la lógica de gameplay, física y rendimiento.</p>
+                </div>
+                <div class="member">
+                    <h3>Diseñador</h3>
+                    <div class="member-role">» Director de Arte »</div>
+                    <p>Creó el mundo visual completo, pixel art, diseño de UI y la atmósfera submarina. Trae EcoSub a la vida.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <h2>¿Listo Para La Misión?</h2>
+        <p>Navega hacia la cueva submarina. Evita los peces, recoge los químicos. Cada decisión importa. ¡Buena suerte, piloto!</p>
+        <a href="ecosub.html" class="btn-play btn-large">Jugar EcoSub</a>
+    </footer>
+
 </body>
 </html>

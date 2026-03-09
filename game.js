@@ -364,7 +364,7 @@ function redo(){
 function menu(){
   // Marcar que se debe saltar la intro al volver al menú
   sessionStorage.setItem('saltarIntro', 'true');
-  window.location.href = "index.html";
+  window.location.href = "ecosub.html";
 }
 
 function pausarJuego(){
